@@ -35,11 +35,11 @@ body {
 
 .item-bg-image {
   height: 500px;
-  width: 100%;
-  /* width: 1768px; */
+  /* width: 100%; */
+  width: 1768px !important;
   background-size: cover;
   background-position: top center;
-  float: left;
+  /* float: left; */
 }
 
 .screen-1 .owl-carousel {
@@ -49,6 +49,10 @@ body {
 .owl-item {
   /* width: 1768px !important; */
   /* width:1024px !important; */
+}
+
+.lol .owl-dots{
+  display:none;
 }
 
 @media(min-width: 455px) {
