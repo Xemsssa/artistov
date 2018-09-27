@@ -1,25 +1,41 @@
 $(document).ready(function () {
-    $('.owl-carousel').owlCarousel({
+    $('.screen-1 >.owl-carousel').owlCarousel({
         // lazyLoad:true,
         items:1,
         autoplay: true,
-        smartSpeed: 15000,
+        smartSpeed: 1500,
         loop: true,
-        margin: 10,
+        // margin: 10,
+        dots: false,
         responsiveClass: true,
+        singleItem:true,
+       
+    }),
+
+
+    $('.owl-carousel').owlCarousel({
+        // lazyLoad:true,
+        // items:1,
+        autoplay: true,
+        smartSpeed: 1500,
+        loop: true,
+        // margin: 10,
+        dots: false,
+        responsiveClass: true,
+        singleItem:true,
         responsive: {
             0: {
                 items: 1,
-                nav: true,
+                // nav: true,
             },
             600: {
-                items: 2,
-                nav: false
+                items: 3,
+                // nav: false
             },
             1000: {
                 items: 6,
-                nav: true,
-                loop: false
+                // nav: true,
+                // loop: false
             }
         }
     })

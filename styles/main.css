@@ -35,10 +35,13 @@ body {
 
 .item-bg-image {
   height: 500px;
-  /* width: 100%; */
-  width: 1768px !important;
+  width: 100%;
+  /* width: 1768px !important; */
+  /* background-repeat: no-repeat; */
+  /* display: block; */
   background-size: cover;
-  background-position: top center;
+  /* background-size: contain; */
+  /* background-position: top center; */
   /* float: left; */
 }
 
@@ -46,16 +49,20 @@ body {
   padding: 0;
 }
 
-.owl-item {
-  /* width: 1768px !important; */
-  /* width:1024px !important; */
-}
-
 .lol .owl-dots{
   display:none;
 }
 
 @media(min-width: 455px) {
+  .item-bg-image {
+    height: 500px;
+    width: 100%;
+  }
+}
+
+
+
+@media(min-width: 1200px) {
   .item-bg-image {
     height: 700px;
     width: 100%;
@@ -67,11 +74,11 @@ body {
 /* banner */
 .banner {
   /* background-image: url("../images/banner.png"); */
-  background-repeat: no-repeat;
-  background-position: center;
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
 
-  background-size: cover;
-  max-height: 500px;
+  /* background-size: cover; */
+  /* max-height: 500px; */
 }
 
 .menu {
@@ -361,8 +368,10 @@ body {
 }
 
 .requestForm_input {
-  background-color: #6c27a6;
+  /* background-color: #6c27a6; */
+  background-color: #190c3e;
   background-repeat: no-repeat;
+  border: 2px solid #6c27a6;
   background-position: top 15px left 15px;
   padding: 25px 40px;
 }
@@ -527,7 +536,7 @@ body {
 .owl-stage-outer {
   overflow: hidden;
   /* padding: 20px 0; */
-  margin-bottom: 20px;
+  margin-bottom: 70px;
 }
 
 
@@ -558,9 +567,13 @@ body {
 .needHelp_form {
   border: 2px solid #6c27a6;
   padding: 20px 20px 10px 20px;
-  background-color: rgba(47, 19, 49, 0.7);
+  background-color: #190C3E;
+  /* background-color: rgba(47, 19, 49, 0.7); */
 }
 
+.needHelp_form .requestForm_input{
+  border-radius: 5px;
+}
 .needHelp_form .row {
   display: flex;
   flex-direction: column;
@@ -574,6 +587,13 @@ body {
 }
 
 /* footer */
+.footerBackg {
+  /* border: 2px solid red; */
+  background-image: url("../images/footer.png");
+  background-size: contain;
+  /* width: 100%; */
+
+}
 
 .footer {
   display: flex;
