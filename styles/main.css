@@ -8,8 +8,10 @@ body {
   background-image: url("../images/background.png");
   background-repeat: no-repeat;
   height: 100%;
-  /* background-size: cover; */
-  /* box-sizing: border-box; */
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  z-index: 100000;
 }
 
 .container {
@@ -47,6 +49,7 @@ body {
 
 .screen-1 .owl-carousel {
   padding: 0;
+  z-index: 1;
 }
 
 .lol .owl-dots{
@@ -77,19 +80,33 @@ body {
 
 /* banner */
 .banner {
-  /* background-image: url("../images/banner.png"); */
+
+}
+
+.light_line{
+  background-image: url("../images/light line.png");
   /* background-repeat: no-repeat; */
   /* background-position: center; */
-
-  /* background-size: cover; */
-  /* max-height: 500px; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-position: top 330px  center;
+  position: relative;
+  width: 100%;
+  /* position: absolute; */
+  display: flex;
+  align-items: center;
+  top: -20px;
+  z-index: 10;
 }
 
 .menu {
   background-image: url("../images/menu.png");
   background-repeat: no-repeat;
   /* height: 100%; */
+  background-size: cover;
   position: relative;
+  background-position: top center;
   z-index: 1000;
 }
 
@@ -336,6 +353,7 @@ body {
   margin-bottom: 20px;
   color: #fff;
   /* width: 75%; */
+  z-index: 1;
 }
 
 .requestForm h4 {
@@ -389,7 +407,8 @@ body {
 /* aboutUs */
 
 .aboutUs {
-  padding: 70px 0;
+  padding: 170px 0 70px  0;
+  padding: 70px 0px;
 }
 
 /* ourProjects */
@@ -539,7 +558,7 @@ body {
 .owl-carousel {
   text-align: center;
   padding: 30px;
-  padding-bottom: 60px;
+  /* padding-bottom: 60px; */
 
 }
 
@@ -550,7 +569,7 @@ body {
 .owl-stage-outer {
   overflow: hidden;
   /* padding: 20px 0; */
-  margin-bottom: 70px;
+  /* margin-bottom: 70px; */
 }
 
 
